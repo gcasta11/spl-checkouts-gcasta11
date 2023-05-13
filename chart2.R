@@ -9,7 +9,7 @@ time <- c(2018, 2019, 2020, 2021, 2022)
 
 library(ggplot2)
 options(scipen = 999)
-chart2 <- ggplot() +
+ggplot() +
   geom_line(aes(x= time, y = num_checkouts_digital)) +
   labs(title = "Digital Book Checkouts 2018-2022", 
        x = "Year", 
@@ -17,4 +17,4 @@ chart2 <- ggplot() +
 scale_x_continuous(limits = c(2018, 2022))
 
 
-chart2
+
