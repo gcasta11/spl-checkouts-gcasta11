@@ -3,58 +3,39 @@ title: "A3: SPL Library Checkouts"
 output: html_document
 ---
 
-### Introduction
+### The Decline of Libraries Due to COVID-19
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+The Coronavirus pandemic left the entire globe in confusion and fear, during its early stages in 2020. This forced much of the world to adapt, in hopes of instilling normalcy to our everyday lives. There were many institutions that were forced to undergo systematic changes. These fields include education, corporate entities, and many other institutions. We are able to note these changes, presently, in the ways with which we interact and use educational tools.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R
-script
+The Seattle public Library has recently published a lot of its physical and digital book checkout data, dating back as far as 2005. In light of the recent pandemic, there are general trends among this data set that prove there has been a decline in physical book checkouts, while digital book checkouts have been steadily rising in frequency, and in monthly checkouts, since the year 2018.
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
+Through the years of 2018 to 2022, there has been a steady decrease in the amount of physical books that have been checked out from the Seattle Public Library. In 2018, `num_physical_checkouts_2018` were checked out. In 2019, `num_physical_checkouts_2019` were checked out. In 2020, when thew coronavirus pandemic first began, `num_physical_checkouts_2020` were checked out. During the peak years of the pandemic, there were `num_physical_checkouts_2021` in 2021, and `num_physical_checkouts_2022`. Based on the data collected, there is clearly indication of a decrease in the number of books checked out, during the peak years of the Coronavirus pandemic.
 
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
+The Seattle Public Library has also released the data regarding digital and ebook checkouts from 2018 to 2022. In 2018, there were `num_digital_checkouts_2018` digital books checked out. In 2019, there was a gradual increase in the number of digital books being checked out, bringing the number to `num_digital_checkouts_2019`. At the start of the pandemic, we noticed another gradual increase, bringing this figure to `num_digital_checkouts_2020`. During the peak years of the Coronavirus pandemic, there were `num_digital_checkouts_2021` and `num_digital_checkouts_2022` digital book checkouts. Based on this data, we can conclude that there has been a steady rise in the amount of digital books that Seattle residents have checked out, regardless of the global pandemic.
 
-Feel free to calculate and report values that you find relevant.
+
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
+The dataset that the Seattle Public Library published was last updated April 21, 2023. The dataset itself, was provided by the Seattle Public Library. The owner of the dataset is David Christensen. David Christensen is a Data Analyst for the Seattle Public Library, and has been for the past 12 years. He also works as avData Management Consultant.
+
+The library data set that is being studied currently features data from 2017 to 2023. The data was collected by retrieving book checkout records from the Seattle Public library. This data was then cleaned and formatted to view in an organized fashion. Data, like the types found in this dataset are often used to study and observe what types of features and accommodations are continuously being used from a service, in order to make that service more accessible to the population, through innovation. In the data set, there are over 800,00 observations, with 12 distinct features. These features include the kinds of checkouts, physical or digital, the month and year of the checkout, the amount of checkouts for that date, the titles of the books checked out, the ISBN, of those books, and the publication year of those books. The dataset also features the format of the book that was checked out. This indicates if the book was an audio book, an ebook, a video dics, or a physical book.
+
+An ethical question that arose while viewing and working with this data is: would it be ethical to retrieve data from hundreds of thousands of people, without their knowledge, for an educational study?
+
 
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest.
-Think carefully about what you want to communicate to your user (you may have to find relevant trends in the 
-dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the 
-variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-```{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")}
 ```
 
+
 ### Second Trends Over Time Chart
+
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
@@ -74,21 +55,14 @@ variable name.
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, message = FALSE, code = readLines("chart2.R")}
 ```
 
-### Your Choice
+### Physical Book Checkouts 2017-2023
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and 
-more. Here are some requirements to help guide your design:
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-```{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, message = FALSE, code = readLines("chart3.R")}
 ```
 
 
