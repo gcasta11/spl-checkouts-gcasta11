@@ -1,5 +1,5 @@
 #plotting chart 3
-chart3 <- ggplot(data = spl_df) +
+ggplot(data = spl_df) +
   geom_col(mapping = aes(
     x = CheckoutYear, 
     y = Checkouts, 
@@ -8,4 +8,4 @@ chart3 <- ggplot(data = spl_df) +
   labs(title = "Difference in Book Checkouts 2017-2023", 
        x = "Year", 
        y = "Number of Checkouts")
-chart3
+
