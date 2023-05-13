@@ -9,6 +9,8 @@ The Coronavirus pandemic left the entire globe in confusion and fear, during its
 
 ### Summary Information
 
+```{r, code=readLines("summary.R"), echo=FALSE}
+```
 The Seattle public Library has recently published a lot of its physical and digital book checkout data, dating back as far as 2005. In light of the recent pandemic, there are general trends among this data set that prove there has been a decline in physical book checkouts, while digital book checkouts have been steadily rising in frequency, and in monthly checkouts, since the year 2018.
 
 Through the years of 2018 to 2022, there has been a steady decrease in the amount of physical books that have been checked out from the Seattle Public Library. In 2018, `num_physical_checkouts_2018` were checked out. In 2019, `num_physical_checkouts_2019` were checked out. In 2020, when thew coronavirus pandemic first began, `num_physical_checkouts_2020` were checked out. During the peak years of the pandemic, there were `num_physical_checkouts_2021` in 2021, and `num_physical_checkouts_2022`. Based on the data collected, there is clearly indication of a decrease in the number of books checked out, during the peak years of the Coronavirus pandemic.
@@ -30,20 +32,20 @@ An ethical question that arose while viewing and working with this data is: woul
 ### First Trends Over Time Chart
 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")}
+```{r, echo=FALSE, warning=FALSE, message=FALSE, code=readLines("chart1.R")}
 ```
 This chart shows the decrease in physical books being checked out over the course of various years.
 
 ### Second Trends Over Time Chart
 
-```{r, echo = FALSE, message = FALSE, code = readLines("chart2.R")}
+```{r, echo=FALSE, message=FALSE, code=readLines("chart2.R")}
 ```
 This chart shows the increase of digital books being checked out over the course of various years.
 
 ### Physical Book Checkouts 2017-2023
 
 
-```{r, echo = FALSE, message = FALSE, code = readLines("chart3.R")}
+```{r, echo=FALSE, message=FALSE, code=readLines("chart3.R")}
 ```
 This chart shows a faceted graph of both digital and physical book checkouts, over the course of various years. This chart demonstrates a side by side difference in how physical and digital books were checked out from 2017 to the beginning of 2023.
 
