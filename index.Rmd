@@ -32,37 +32,18 @@ An ethical question that arose while viewing and working with this data is: woul
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")}
 ```
-
+This chart shows the decrease in physical books being checked out over the course of various years.
 
 ### Second Trends Over Time Chart
 
-
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show another trend over time of your 
-variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find 
-relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the 
-variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
 ```{r, echo = FALSE, message = FALSE, code = readLines("chart2.R")}
 ```
+This chart shows the increase of digital books being checked out over the course of various years.
 
 ### Physical Book Checkouts 2017-2023
 
 
-
 ```{r, echo = FALSE, message = FALSE, code = readLines("chart3.R")}
 ```
-
+This chart shows a faceted graph of both digital and physical book checkouts, over the course of various years. This chart demonstrates a side by side difference in how physical and digital books were checked out from 2017 to the beginning of 2023.
 
