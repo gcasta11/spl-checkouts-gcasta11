@@ -1,18 +1,11 @@
-spl_df <- read_csv("Downloads/info_201_code/a3-extra-stuff/2017-2023-10-Checkouts-SPL-Data.csv")
-
-library("dplyr")
-install.packages("dplyr")
-install.packages("ggplot2")
-library("ggplot2")
-
-
+library(dplyr)
+spl_df <- read.csv("~/Downloads/info_201_code/2017-2023-10-Checkouts-SPL-Data.csv")
 # physical checkouts in 2018
 physical_checkouts_2018 <- spl_df %>% 
   filter(CheckoutYear == 2018) %>% 
   filter(UsageClass == "Physical") %>% 
   pull(Checkouts)
 
-  
 num_physical_checkouts_2018 <- length(physical_checkouts_2018)
 
 # digital checkouts in 2018
