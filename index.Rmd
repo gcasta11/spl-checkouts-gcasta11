@@ -7,16 +7,16 @@ output: html_document
 
 The Coronavirus pandemic left the entire globe in confusion and fear, during its early stages in 2020. This forced much of the world to adapt, in hopes of instilling normalcy to our everyday lives. There were many institutions that were forced to undergo systematic changes. These fields include education, corporate entities, and many other institutions. We are able to note these changes, presently, in the ways with which we interact and use educational tools.
 
-### Summary Information
 
-```{r message=FALSE, warning=FALSE, code=readLines("summary.R"), include=FALSE}
+### Summary Information
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("summary.R")}
 ```
 
 The Seattle public Library has recently published a lot of its physical and digital book checkout data, dating back as far as 2005. In light of the recent pandemic, there are general trends among this data set that prove there has been a decline in physical book checkouts, while digital book checkouts have been steadily rising in frequency, and in monthly checkouts, since the year 2018.
 
-Through the years of 2018 to 2022, there has been a steady decrease in the amount of physical books that have been checked out from the Seattle Public Library. In 2018, `num_physical_checkouts_2018` were checked out. In 2019, `num_physical_checkouts_2019` were checked out. In 2020, when the Coronavirus pandemic first began, `num_physical_checkouts_2020` were checked out. During the peak years of the pandemic, there were `num_physical_checkouts_2021` in 2021, and `num_physical_checkouts_2022`. Based on the data collected, there is a clear indication of a decrease in the number of books checked out, during the peak years of the Coronavirus pandemic.
+Through the years of 2018 to 2022, there has been a steady decrease in the amount of physical books that have been checked out from the Seattle Public Library. In 2018, **`r num_physical_checkouts_2018`** were checked out. In 2019, **`r num_physical_checkouts_2019`** were checked out. In 2020, when the Coronavirus pandemic first began, **`r num_physical_checkouts_2020`** were checked out. During the peak years of the pandemic, there were **`r num_physical_checkouts_2021`** in 2021, and **`r num_physical_checkouts_2022`**. Based on the data collected, there is a clear indication of a decrease in the number of books checked out, during the peak years of the Coronavirus pandemic.
 
-The Seattle Public Library has also released the data regarding digital and ebook checkouts from 2018 to 2022. In 2018, there were `num_digital_checkouts_2018` digital books checked out. In 2019, there was a gradual increase in the number of digital books being checked out, bringing the number to `num_digital_checkouts_2019`. At the start of the pandemic, we noticed another gradual increase, bringing this figure to `num_digital_checkouts_2020`. During the peak years of the Coronavirus pandemic, there were `num_digital_checkouts_2021` and `num_digital_checkouts_2022` digital book checkouts. Based on this data, we can conclude that there has been a steady rise in the amount of digital books that Seattle residents have checked out, regardless of the global pandemic.
+The Seattle Public Library has also released the data regarding digital and ebook checkouts from 2018 to 2022. In 2018, there were **`r num_digital_checkouts_2018`** digital books checked out. In 2019, there was a gradual increase in the number of digital books being checked out, bringing the number to **`r num_digital_checkouts_2019`**. At the start of the pandemic, we noticed another gradual increase, bringing this figure to **`r num_digital_checkouts_2020`**. During the peak years of the Coronavirus pandemic, there were **`r num_digital_checkouts_2021`** and **`r num_digital_checkouts_2022`** digital book checkouts. Based on this data, we can conclude that there has been a steady rise in the amount of digital books that Seattle residents have checked out, regardless of the global pandemic.
 
 
 
@@ -33,19 +33,25 @@ An ethical question that arose while viewing and working with this data is: woul
 ### First Trends Over Time Chart
 
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, code=readLines("chart1.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")}
 ```
-This chart shows the decrease in physical books being checked out over the course of various years.
 
+
+This chart shows the decrease in physical books being checked out over the course of various years. In the year 2020, there is a very sharp and sudden drop in the number of physical books being checked out. This aids in reinforcing our original hypothesis that the COVID-19 pandemic had a very significant effect on many institutions, from a global point of view. So much so, that books being checked out, which once were in the 6 figure range, have now dropped drastically. This number can elude to how society needed to adapt and change the ways in which students study, from an analog system to a digital system.
 ### Second Trends Over Time Chart
 
-```{r, echo=FALSE, message=FALSE, code=readLines("chart2.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart2.R")}
 ```
-This chart shows the increase of digital books being checked out over the course of various years.
+
+
+This chart shows the increase of digital books being checked out over the course of various years. This graph helps to reinforce the idea that many institutions, including educational systems, needed to update how their students were receiving information and learning. This chart shows a linear increase in digital books being checked out. There is not much of a difference or dip in the year 2020. This supports the idea that society was moving towards a digital educational system as time went on. The COVID-19 pandemic helped quicken the process of switching to a digital education system, however, this switch was ongoing and inevitable.
+
 
 ### Physical Book Checkouts 2017-2023
 
 
-```{r, echo=FALSE, message=FALSE, code=readLines("chart3.R")}
+``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart3.R")}
 ```
+
+
 This chart shows a faceted graph of both digital and physical book checkouts, over the course of various years. This chart demonstrates a side by side difference in how physical and digital books were checked out from 2017 to the beginning of 2023.
