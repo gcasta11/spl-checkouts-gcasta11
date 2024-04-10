@@ -1,7 +1,7 @@
 # Assignment 3: SPL Library Checkouts
 
 Link to your final GitHub pages site here: file:///Users/gabbylopez/Downloads/A3_%20SPL%20Library%20Checkouts.mhtml
-http://gcasta11.github.io/index.html
+http://gcasta11.github.io/spl-library-checkouts/
 (change the link to for your GitHub pages site)
 
 In this assignment, you will use your data analysis and visualization skills to analyze patterns and trends in [library circulation data published by the Seattle Public Library](https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6).
