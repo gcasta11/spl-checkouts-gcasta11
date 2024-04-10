@@ -28,13 +28,13 @@ The library data set that is being studied currently features data from 2017 to 
 
 An ethical question that arose while viewing and working with this data is: would it be ethical to retrieve data from hundreds of thousands of people, without their knowledge, for an educational study?
 
-
-
+###```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")
+  source("chart1.R}'''
 ### First Trends Over Time Chart
 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")
-  source("chart1.R}'''
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+    source("chart1.R)'''
 
 
 
