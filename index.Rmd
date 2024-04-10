@@ -33,7 +33,7 @@ An ethical question that arose while viewing and working with this data is: woul
 ### First Trends Over Time Chart
 
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")'''
+```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("chart1.R")}'''
 
 
 
